@@ -75,7 +75,7 @@ A API permite:
 
 ```bash
 git clone https://github.com/paulorosado07/Order-API
-cd project-root
+cd Order-API
 
 npm install
 
@@ -105,7 +105,7 @@ Abra o **PowerShell** e execute:
 
 ```powershell
 git clone https://github.com/paulorosado07/Order-API
-cd project-root
+cd Order-API
 
 npm install
 
