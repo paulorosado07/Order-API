@@ -1,0 +1,30 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Order {
+  orderId      String  @id
+  value        Int
+  creationDate DateTime
+
+  items Items[]
+
+  @@map("Order")
+}
+
+model Items {
+  orderId   String
+  productId Int
+  quantity  Int
+  price     Int
+
+  order Order @relation(fields: [orderId], references: [orderId], onDelete: Cascade)
+
+  @@id([orderId, productId])
+  @@map("Items")
+}
