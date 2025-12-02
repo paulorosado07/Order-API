@@ -74,7 +74,7 @@ A API permite:
 ## 🖥️ Rodar no **Linux**
 
 ```bash
-git clone <URL_DO_SEU_REPO>
+git clone https://github.com/paulorosado07/Order-API
 cd project-root
 
 npm install
@@ -104,7 +104,7 @@ http://localhost:3000/docs
 Abra o **PowerShell** e execute:
 
 ```powershell
-git clone <URL_DO_SEU_REPO>
+git clone https://github.com/paulorosado07/Order-API
 cd project-root
 
 npm install
