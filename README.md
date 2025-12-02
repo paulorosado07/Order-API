@@ -39,27 +39,24 @@ A API permite:
 ## 📂 Estrutura do Projeto
 
 ```
-
-src/
-├── config/
-│    ├── database.ts
-│    └── swagger.ts
-├── models/
-├── schemas/
-├── repositories/
-├── services/
-├── routers/
-├── middleware/
+.
 ├── app.ts
-└── server.ts
-tests/
-prisma/
-Dockerfile
-docker-compose.yml
-tsconfig.json
-jest.config.cjs
-.eslintrc.cjs
-
+├── config
+│   ├── database.ts
+│   └── swagger.ts
+├── middleware
+│   └── errorHandler.ts
+├── models
+│   └── order.model.ts
+├── repositories
+│   └── order.repository.ts
+├── routers
+│   └── order.router.ts
+├── schemas
+│   └── order.schema.ts
+├── server.ts
+└── services
+    └── order.service.ts
 ````
 
 ---
